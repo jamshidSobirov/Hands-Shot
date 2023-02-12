@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hands shot</string>
+    <string name="settings">НАСТРОЙКИ</string>
+    <string name="hand_nselection">ВЫБРАТЬ \nРУКУ</string>
+    <string name="_1_nplayer">1 \nИГРОК</string>
+    <string name="_2_nplayer">2 \nИГРОК</string>
+    <string name="sound">ЗВУКИ</string>
+    <string name="vibration">ВИБРАЦИЯ </string>
+    <string name="menu">МЕНЮ</string>
+    <string name="hit">удар</string>
+    <string name="hide">спрятать</string>
+    <string name="you_win">Победа \nВаша!</string>
+    <string name="victory_player1">Победа \nза Игроком \n№1</string>
+    <string name="victory_player2">Победа \nза Игроком \n№2</string>
+    <string name="victory_bot">Вы \nпроиграли</string>
+    <string name="language">ЯЗЫК</string>
+
+</resources>

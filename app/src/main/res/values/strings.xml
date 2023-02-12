@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Hands shot</string>
+    <string name="settings">settings</string>
+    <string name="hand_nselection">Hand \nSelection</string>
+    <string name="_1_nplayer">1 \nPlayer</string>
+    <string name="_2_nplayer">2 \nPlayer</string>
+    <string name="sound">SOUND</string>
+    <string name="vibration">VIBRATION</string>
+    <string name="menu">menu</string>
+    <string name="hit">hit</string>
+    <string name="hide">hide</string>
+    <string name="you_win">YOU WIN!</string>
+    <string name="victory_player1">Victory \nfor player \n№1</string>
+    <string name="victory_player2">Victory \nfor player \n№2</string>
+    <string name="victory_bot">You Lose</string>
+    <string name="language">LANGUAGE</string>
+</resources>

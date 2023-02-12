@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SettingsActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_bk" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="150dp"
+            android:layout_marginVertical="50dp"
+            android:background="@drawable/settings_rectangle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="24dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:letterSpacing="0.08"
+                        android:text="@string/sound"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical">
+
+                        <RadioGroup
+                            android:id="@+id/rgSound"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checkedButton="@id/rbSoundOn"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.radiobutton.MaterialRadioButton
+                                android:id="@+id/rbSoundOn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/radiobutton_sound_on"
+                                android:button="@null" />
+
+                            <com.google.android.material.radiobutton.MaterialRadioButton
+                                android:id="@+id/rbSoundOff"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="18dp"
+                                android:background="@drawable/radiobutton_sound_off"
+                                android:button="@null" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:letterSpacing="0.08"
+                        android:text="@string/vibration"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical">
+
+                        <RadioGroup
+                            android:id="@+id/rgVibration"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checkedButton="@id/rbVibrationOn"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.radiobutton.MaterialRadioButton
+                                android:id="@+id/rbVibrationOn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/radiobutton_vibration_on"
+                                android:button="@null" />
+
+                            <com.google.android.material.radiobutton.MaterialRadioButton
+                                android:id="@+id/rbVibrationOff"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="18dp"
+                                android:background="@drawable/radiobutton_vibration_off"
+                                android:button="@null" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:letterSpacing="0.08"
+                        android:text="@string/language"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical">
+
+                        <RadioGroup
+                            android:id="@+id/rgLanguage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:checkedButton="@id/rbEng"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <com.google.android.material.radiobutton.MaterialRadioButton
+                                android:id="@+id/rbEng"
+                                android:layout_width="55dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/radiobutton_lang_eng"
+                                android:button="@null" />
+
+                            <com.google.android.material.radiobutton.MaterialRadioButton
+                                android:id="@+id/rbRus"
+                                android:layout_width="55dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="50dp"
+                                android:background="@drawable/radiobutton_lang_rus"
+                                android:button="@null" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="18dp"
+                android:backgroundTint="@color/btn_selector"
+                android:paddingHorizontal="50dp"
+                android:text="@string/menu"
+                android:textSize="15sp"
+                app:cornerRadius="16dp"
+                app:rippleColor="@null"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

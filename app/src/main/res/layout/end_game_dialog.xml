@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/endGameDialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="70dp"
+    android:layout_marginVertical="35dp"
+    android:background="@drawable/settings_rectangle"
+    android:elevation="50dp">
+
+    <TextView
+        android:id="@+id/endGameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:paddingHorizontal="8dp"
+        android:text="@string/victory_player1"
+        android:textAllCaps="true"
+        android:textColor="#47D93B"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@id/btnMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginVertical="18dp"
+        android:backgroundTint="@color/btn_selector"
+        android:paddingHorizontal="50dp"
+        android:text="@string/menu"
+        android:textSize="15sp"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@null"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

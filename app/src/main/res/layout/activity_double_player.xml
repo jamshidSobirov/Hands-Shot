@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DoublePlayerActivity">
+
+    <FrameLayout
+        android:id="@+id/user1Ground"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#2B3D9B"
+        app:layout_constraintEnd_toEndOf="@id/divider"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <FrameLayout
+        android:id="@+id/divider"
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/user2Ground"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#7E2B9B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imRightHand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/hand2_right_short"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imRightHiddenHand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="-170dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/hand2_right_short"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imLeftHand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/hand1_left_short"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imLeftHiddenHand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="-170dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/hand1_left_short"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8">
+
+                <ImageView
+                    android:id="@+id/imHitBoomRight"
+                    android:layout_width="270dp"
+                    android:layout_height="270dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginTop="-15dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/boom"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imLeftHandHitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/hand6_left"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8">
+
+                <ImageView
+                    android:id="@+id/imHitBoomLeft"
+                    android:layout_width="270dp"
+                    android:layout_height="270dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="-15dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/boom"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imRightHandHitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/hand1_right"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/user1Ground"
+        app:layout_constraintStart_toStartOf="@+id/divider"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            app:cardCornerRadius="16dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D85A49"
+                android:paddingVertical="8dp">
+
+                <TextView
+                    android:id="@+id/user1Score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="14dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text=":"
+                    android:textColor="@color/white"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/user2Score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="14dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="32sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/hitUser1"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#227E36"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/hit"
+            android:textSize="15sp"
+            app:cornerRadius="16dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/hideUser1"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="#227E36"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/hide"
+            android:textSize="15sp"
+            app:cornerRadius="16dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/hitUser2"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#227E36"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/hit"
+            android:textSize="15sp"
+            app:cornerRadius="16dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/hideUser2"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="#227E36"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/hide"
+            android:textSize="15sp"
+            app:cornerRadius="16dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
