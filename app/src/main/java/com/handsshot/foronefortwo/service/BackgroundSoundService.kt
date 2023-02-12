@@ -16,7 +16,7 @@ class BackgroundSoundService : Service() {
         super.onCreate()
         player = MediaPlayer.create(this, R.raw.main_theme)
         player!!.isLooping = true // Set looping
-        player!!.setVolume(100f, 100f)
+        player!!.setVolume(0.15f, 0.15f)
     }
 
     override fun onStartCommand(intent: Intent, flags: Int, startId: Int): Int {

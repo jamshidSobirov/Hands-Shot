@@ -40,6 +40,7 @@ class SinglePlayerActivity : BaseActivity() {
 
 
             hitUser2.setOnClickListener {
+                makeHitSound()
                 vibrate()
                 alreadyHit = true
                 if (alreadyHidden) {
@@ -103,6 +104,7 @@ class SinglePlayerActivity : BaseActivity() {
     private fun roboticHit() {
         Handler(Looper.myLooper()!!).postDelayed({
             binding.apply {
+                makeHitSound()
                 alreadyHit = true
                 if (alreadyHidden) {
                     hitUser2.enable()

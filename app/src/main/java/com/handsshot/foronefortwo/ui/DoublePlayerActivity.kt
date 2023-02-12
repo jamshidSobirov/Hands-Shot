@@ -37,6 +37,7 @@ class DoublePlayerActivity : BaseActivity() {
             }
 
             hitUser1.setOnClickListener {
+                makeHitSound()
                 vibrate()
                 alreadyHit = true
                 if (alreadyHidden) {
@@ -74,6 +75,7 @@ class DoublePlayerActivity : BaseActivity() {
             }
 
             hitUser2.setOnClickListener {
+                makeHitSound()
                 vibrate()
                 alreadyHit = true
                 if (alreadyHidden) {
